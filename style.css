@@ -1,0 +1,228 @@
+h1 {
+    color: rgb(0, 105, 0);
+    text-align: center;
+    text-shadow: 4px 4px 5px rgb(68, 68, 71)
+}
+
+.title {
+    color: rgb(0, 105, 0);
+}
+
+#italic{
+    color: rgb(0, 0, 0);
+}
+
+nav {
+    background-color: rgb(0, 105, 0);
+    text-align: center;
+}
+
+.nav-wrapper {
+    background-color: rgb(0, 105, 0);
+}
+
+a {
+    text-decoration-line: none;
+}
+
+nav ul {
+  list-style: none;  
+}
+
+nav li {
+    display: inline-block;
+    padding: 25px;
+}
+
+.container{
+    border: 10px rgb(0, 105, 0);
+    margin: 50px;  
+    padding: 5px
+}
+
+.box {
+    height: 50px; 
+    height: 100px;
+    background: rgb(0, 105, 0);
+    margin: 10px;
+}
+
+@keyframes fadeMe {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+#box1 {
+    animation-name: fadeMe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    0% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}    
+    100% {transform: rotate(360deg);}
+}
+
+#box2 {
+    animation-name: rotation;
+    animation-duration: 15s;
+    animation-iteration-count: 5s;
+    animation-timing-function: ease-in-out;
+    border-radius: 10%;
+   background-image: radial-gradient(circle, rgb(0, 105, 0), rgb(61, 61, 61), rgb(0, 105, 0), rgb(61, 61, 61), rgb(0, 105, 0));
+}
+
+@keyframes getBigger  {
+    0% {transform: scale(1);}
+    50% {transform: scale(2);}
+    100% {transform: scale(.5);}
+}
+
+#box3 {
+    animation: getBigger infinite 8s ease-in;
+    background-color: rgb(0, 105, 0);
+}
+
+@keyframes changeColors {
+    0% {background-color: rgb(54, 53, 59)}
+    25% {background-color: rgb(0, 105, 0)}
+    50% {background-color: rgb(54, 53, 59)}
+    75% {background-color: rgb(0, 105, 0)}
+    100% {background-color: rgb(54, 53, 59)}
+}
+
+#box4 {
+    animation: changeColors 7s infinite;
+}
+
+@keyframes moveBox {
+    0% {left: 0px; top: 0px}
+    25% {left: 100px; top: 0px}
+    50% {left: 100px; top: 50px}
+    75% {left: 0px; top: 50px}
+    100% {left: 0px; top: 0px}
+}
+
+#box5 {
+    position: relative;
+    background: rgb(0, 105, 0);
+    animation: moveBox 5s 3s;
+}
+
+#box6 {
+    top: 0px;
+    left: 0px;
+    position: relative;
+    Background: rgb(0, 105, 0);
+}
+    
+html {
+    background-image: linear-gradient( to right, rgb(51, 51, 51), rgb(90, 90, 90), rgb(51, 51, 51));
+}
+
+
+.circle-img {
+    border-radius: 20%
+}
+
+
+img {
+    box-shadow: 5px 7px 10px rgb(58, 58, 58) 
+}
+
+.flex {
+    margin: 10px;
+    border: 3px solid rgb(0, 105, 0);
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+form input {
+display: block;
+margin: 30px;
+}
+
+form textarea {
+display: block;
+margin: 30px;
+}
+
+form button {
+    display: block;margin: 30px;
+
+}
+
+.contact-box {
+    display: flex;
+    justify-content: left;
+}
+
+.row {
+    margin: 15px
+}
+
+.input-field {
+    margin: 10px
+}
+
+.wrapper {
+    display: grid;
+grid-gap: 10px;
+    grid-template-columns: repeat(4, [col] 25% ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color: rgb(61, 61, 61);
+    color: rgb(61, 61, 61);
+}
+
+.Box {
+    background-color: rgb(61, 61, 61);
+    color: rgb(61, 61, 61);
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+
+}
+
+.a {
+    grid-column: col / span 2;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(0, 105, 0), rgb(61, 61, 61), rgb(0, 105, 0), rgb(61, 61, 61), rgb(0, 105, 0));
+}
+.b {
+    grid-column: col 3 / span 2 ;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(61, 61, 61), rgb(0, 105, 0), rgb(61, 61, 61), rgb(0, 105, 0), rgb(61, 61, 61));
+}
+.c {
+    grid-column: col ;
+    grid-row: row 2 ;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(0, 105, 0), rgb(61, 61, 61), rgb(0, 105, 0), rgb(105, 105, 105), rgb(0, 105, 0));
+}
+.d {
+    grid-column: col 2 / span 3 ;
+    grid-row: row 2 ;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(61, 61, 61), rgb(0, 105, 0), rgb(61, 61, 61), rgb(0, 105, 0), rgb(61, 61, 61));
+}
+
+.e {
+    grid-column: col / span 4;
+    grid-row: row 3;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(0, 105, 0), rgb(61, 61, 61), rgb(0, 105, 0), rgb(61, 61, 61), rgb(0, 105, 0));
+}
