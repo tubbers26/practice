@@ -139,7 +139,7 @@ img {
 
 .flex {
     margin: 10px;
-    border: 3px solid rgb(0, 105, 0);
+    border: 3px solid rgb(0, 0, 0);
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -202,21 +202,21 @@ grid-gap: 10px;
     grid-row: row ;
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(rgb(61, 61, 61), rgb(0, 105, 0), rgb(61, 61, 61), rgb(0, 105, 0), rgb(61, 61, 61));
+    background-image: linear-gradient(rgb(0, 105, 0), rgb(61, 61, 61), rgb(0, 105, 0), rgb(61, 61, 61), rgb(0, 105, 0));
 }
 .c {
     grid-column: col ;
     grid-row: row 2 ;
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(rgb(0, 105, 0), rgb(61, 61, 61), rgb(0, 105, 0), rgb(105, 105, 105), rgb(0, 105, 0));
+    background-image: linear-gradient(rgb(0, 105, 0), rgb(61, 61, 61), rgb(0, 105, 0), rgb(61, 61, 61), rgb(0, 105, 0));
 }
 .d {
     grid-column: col 2 / span 3 ;
     grid-row: row 2 ;
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(rgb(61, 61, 61), rgb(0, 105, 0), rgb(61, 61, 61), rgb(0, 105, 0), rgb(61, 61, 61));
+    background-image: linear-gradient(rgb(0, 105, 0), rgb(61, 61, 61), rgb(0, 105, 0), rgb(61, 61, 61), rgb(0, 105, 0));
 }
 
 .e {
